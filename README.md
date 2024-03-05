@@ -24,3 +24,5 @@ $ sudo apt install ros-<distro-name>-xacro ros-<distro-name>-joint-state-publish
 ```
 # Robot 3D Model
 Create a differential drive robot model using multiple configuration files in the URDF (Unified Robot Description Format) and processing them together using Xacro, a macro language for URDF. The final URDF file generated is then passed into Robot State Publisher, facilitating the availability of the URDF data in the robot_description topic. To manipulate the robot's joints, Robot State Publisher expects input from the joint_state topic. In the initial phase of the project, the Joint State Publisher GUI is utilized to provide simulated joint values to the joint_state topic.
+![Screenshot from 2024-03-05 16-36-56](https://github.com/sghatak5/echo-bot/assets/149153121/f445f8d7-c301-4615-a743-13796c73a220)
+
