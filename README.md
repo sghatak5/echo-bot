@@ -35,4 +35,8 @@ Create a differential drive robot model using multiple configuration files in th
  To simulate the robot in the Gazebo environment using ROS (Robot Operating System) a simulation is initiated using the launch_sim.launch.py script, which orchestrates the launch of essential components including Robot State Publisher, Gazebo simulator, and the robot model spawned within Gazebo. To enable locomotion control, a Gazebo control plugin is utilized to publish values to the left and rigth wheel transform, while user input from the keyboard is translated into velocity commands published to the cmd_vel topic.<br />
 ![Untitleddesign-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/69c11f11-90a7-495d-87ac-c2dad680c52e)
 
-
+# Sensor Integration
+- LiDAR (Light Detection and Range)
+To intigrate a 2D LiDAR, lidar.xacro file is used. <br />
+![Untitleddesign1-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/a345bf0c-aced-4a7f-92d0-9b97d14416ef)
+- 
