@@ -33,5 +33,6 @@ Create a differential drive robot model using multiple configuration files in th
 
 # Simulating Robot in Gazebo
  To simulate the robot in the Gazebo environment using ROS (Robot Operating System) a simulation is initiated using the launch_sim.launch.py script, which orchestrates the launch of essential components including Robot State Publisher, Gazebo simulator, and the robot model spawned within Gazebo. To enable locomotion control, a Gazebo control plugin is utilized to publish values to the left and rigth wheel transform, while user input from the keyboard is translated into velocity commands published to the cmd_vel topic.
-[screencast-from-03-05-2024-051907-pm_3n1loKbU.webm](https://github.com/sghatak5/echo-bot/assets/149153121/a23a7508-c1b2-416e-b1c2-0c15bc8fdeba)
+![screencast-from-03-05-2024-051907-pm_3n1loKbU](https://github.com/sghatak5/echo-bot/assets/149153121/a24e8c27-666e-41ee-9748-6a6d6161395d)
+
 
