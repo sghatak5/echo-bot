@@ -37,7 +37,7 @@ Create a differential drive robot model using multiple configuration files in th
 
 # Sensor Integration
 ### LiDAR (Light Detection and Range)
- To intigrate a 2D LiDAR, lidar.xacro file is used
+ To intigrate a 2D LiDAR, lidar.xacro file is used. LiDAR publishes messages to sensor_msgs/LaserScan.
  
  ![Untitleddesign1-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/a345bf0c-aced-4a7f-92d0-9b97d14416ef)
 
