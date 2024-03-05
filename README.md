@@ -1,4 +1,4 @@
-# echo_bot
+# echo-bot
 # Project Overview
 This GitHub project focuses on building a bot using ROS2 and simulate it in Gazebo. The goal of this project is to successfully build a 2D Map of a space using SLAM(Simultaneous Localization and Mapping) and navigate autonomusly using NAV2. Furthermore, the bot can also be controlled by a joystick to navigate manually. 
 
