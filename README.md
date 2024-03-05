@@ -36,7 +36,8 @@ Create a differential drive robot model using multiple configuration files in th
 ![Untitleddesign-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/69c11f11-90a7-495d-87ac-c2dad680c52e)
 
 # Sensor Integration
-### LiDAR (Light Detection and Range) 
- To intigrate a 2D LiDAR, lidar.xacro file is used. <br />
+### LiDAR (Light Detection and Range)
+ To intigrate a 2D LiDAR, lidar.xacro file is used
+ 
  ![Untitleddesign1-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/a345bf0c-aced-4a7f-92d0-9b97d14416ef)
-- 
+
