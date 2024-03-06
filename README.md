@@ -26,6 +26,10 @@ $ sudo apt install ros-<distro-name>-xacro ros-<distro-name>-joint-state-publish
 ```sh
 $ sudo apt install ros-<distro-name>-gazebo-ros-pkgs
 ```
+- Install ROS2 Control
+```sh
+$ sudo apt install ros-<distro-name>-ros2-control ros-<distro-name>-ros2-controllers ros-<distro-name>-gazebo-ros2-controller
+```
 
 # Robot 3D Model
 Create a differential drive robot model using multiple configuration files in the URDF (Unified Robot Description Format) and processing them together using Xacro, a macro language for URDF. The final URDF file generated is then passed into Robot State Publisher, facilitating the availability of the URDF data in the `robot_description` topic. To manipulate the robot's joints, Robot State Publisher expects input from the `joint_state` topic. In the initial phase of the project, the Joint State Publisher GUI is utilized to provide simulated joint values to the `joint_state` topic.<br />
@@ -52,3 +56,4 @@ Create a differential drive robot model using multiple configuration files in th
  ![Untitleddesign3-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/0de99781-9662-4436-a8eb-240d50dd30c6)
 
 # Control using ROS2 Control
+ ROS2 Control is a framework for (real-time) control of robots using ROS2. Its goal is to simplify integrating new hardware and overcome some drawbacks. To add ROS2 Control in Gazebo sim `ros2_control.xacro` is used. Gazebo uses its own controller manager which uses the `my_controller.yaml`. To use the controller a `spawner.py` file is used in the launch file. 

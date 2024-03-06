@@ -3,8 +3,6 @@
 
     <xacro:include filename="robot_base.xacro" />
 
-    <xacro:include filename="gazebo_control.xacro" />
-
     <xacro:include filename="lidar.xacro" />
 
     <!-- To use camera, comment out depth camera and use the camera xacro tag. -->
@@ -12,10 +10,13 @@
 
     <xacro:include filename="depth_camera.xacro" />
 
-    <!-- <xacro:include filename="ros2_control.xacro" /> 
+    <!-- Commenting Gazebo Control so that ros2_control can be the default control framework for the robot -->
+    <!-- <xacro:include filename="gazebo_control.xacro" /> -->
+
+    <xacro:include filename="ros2_control.xacro" /> 
 
     
 
-       -->
+      
 
 </robot>
