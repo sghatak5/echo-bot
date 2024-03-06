@@ -7,12 +7,15 @@
 
     <xacro:include filename="lidar.xacro" />
 
-    <xacro:include filename="camera.xacro" />
+    <!-- To use camera, comment out depth camera and use the camera xacro tag. -->
+    <!-- <xacro:include filename="camera.xacro" /> -->
+
+    <xacro:include filename="depth_camera.xacro" />
 
     <!-- <xacro:include filename="ros2_control.xacro" /> 
 
     
 
-     <xacro:include filename="depth_camera.xacro" />  -->
+       -->
 
 </robot>

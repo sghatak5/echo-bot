@@ -42,6 +42,13 @@ Create a differential drive robot model using multiple configuration files in th
  ![Untitleddesign1-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/a345bf0c-aced-4a7f-92d0-9b97d14416ef)
 
 ### Camera
- To integrate a camera, `camera.xacro` file is used. 
+ To integrate a camera, `camera.xacro` file is used. Camera publish messages to `sensor_msgs/Images`.
 
  ![Untitleddesign2-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/0c3c1518-f2fe-4b02-8883-821109aeda55)
+
+### Depth Camera
+ To integrate a camera, `depth_camera.xacro` file is used.
+
+ ![Untitleddesign3-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/0de99781-9662-4436-a8eb-240d50dd30c6)
+
+# Control using ROS2 Control
