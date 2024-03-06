@@ -69,4 +69,8 @@ Create a differential drive robot model using multiple configuration files in th
 **Note:** Navigation using Joystick is an optional feature, and if using a keyboard instead, this functionality can be skipped. 
 
 # Mapping using SLAM
- Simultaneous localization and mapping (SLAM) is the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it. In this project grid SLAM with 2D LiDAR is used Online Asnychronous mode.
+Simultaneous Localization and Mapping (SLAM) is a computational challenge focused on generating or updating a map of an unfamiliar environment while concurrently determining the location of an agent within it. In this particular project, Grid SLAM employing a 2D LiDAR sensor is implemented in an Online Asynchronous mode. Parameters essential for this operation are provided through the `mapper_param_online_asny.yaml` configuration file. Within this configuration file, the mode can be specified as either mapping or localization, thereby defining the primary objective of the SLAM process. Upon configuring the parameters, the SLAM system can be executed by running the `launch_sim.launch.py` launch file:
+ ```sh
+ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/path/to/your/mapper_params_online_async.yaml use_sim_time:=true
+```
+
