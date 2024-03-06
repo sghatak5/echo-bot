@@ -34,6 +34,10 @@ $ sudo apt install ros-<distro-name>-ros2-control ros-<distro-name>-ros2-control
 ```sh
 $ sudo apt install ros-<distro-name>-slam-toolbox
 ```
+-Install NAV2 
+```sh
+$ sudo apt install ros-<distro-name>-navigation2 sudo apt install ros-<distro-name>-nav2-bringup sudo apt install ros-<distro-name>-twist-mux
+```
 
 # Robot 3D Model
 Create a differential drive robot model using multiple configuration files in the URDF (Unified Robot Description Format) and processing them together using Xacro, a macro language for URDF. The final URDF file generated is then passed into Robot State Publisher, facilitating the availability of the URDF data in the `robot_description` topic. To manipulate the robot's joints, Robot State Publisher expects input from the `joint_state` topic. In the initial phase of the project, the Joint State Publisher GUI is utilized to provide simulated joint values to the `joint_state` topic.<br />
@@ -73,4 +77,16 @@ Simultaneous Localization and Mapping (SLAM) is a computational challenge focuse
  ```sh
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/path/to/your/mapper_params_online_async.yaml use_sim_time:=true
 ```
+# Navigation using NAV2
+ Navigation is planning and executing a safe trajectory from a initial pose to a target pose. It is one of the autonomous capability of a robot. Using the NAV2 stack the echo-bot will autonomously navigate to a specified target location. Using SLAM an accurate robot position is estimated. For obstacle awareness a static map is used from SLAM and a data from LiDAR to update the map for any live change in course. All the information for obstacle awareness is stores in cost map. The cost map assigns a cost to different areas of the environment where high cose is something to be avoided and a low cost is a safe space to go. After launching the  `launch_sim.launch.py` launch file and the SLAM toolbox, he NAV2 system can be executed by 
+  ```sh
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+```
 
+# Conclusion
+
+# Future Scope
+
+# How to Use the code
+
+# Acknowledgement
