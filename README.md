@@ -30,13 +30,19 @@ $ sudo apt install ros-<distro-name>-gazebo-ros-pkgs
 ```sh
 $ sudo apt install ros-<distro-name>-ros2-control ros-<distro-name>-ros2-controllers ros-<distro-name>-gazebo-ros2-controller
 ```
+- Install SLAM toolbox
+```sh
+$ sudo apt install ros-<distro-name>-slam-toolbox
+```
 
 # Robot 3D Model
 Create a differential drive robot model using multiple configuration files in the URDF (Unified Robot Description Format) and processing them together using Xacro, a macro language for URDF. The final URDF file generated is then passed into Robot State Publisher, facilitating the availability of the URDF data in the `robot_description` topic. To manipulate the robot's joints, Robot State Publisher expects input from the `joint_state` topic. In the initial phase of the project, the Joint State Publisher GUI is utilized to provide simulated joint values to the `joint_state` topic.<br />
+
 ![Screenshot from 2024-03-05 16-36-56](https://github.com/sghatak5/echo-bot/assets/149153121/f445f8d7-c301-4615-a743-13796c73a220)
 
 # Simulating Robot in Gazebo
  To simulate the robot in the Gazebo environment using ROS (Robot Operating System) a simulation is initiated using the `launch_sim.launch.py` script, which orchestrates the launch of essential components including Robot State Publisher, Gazebo simulator, and the robot model spawned within Gazebo. To enable locomotion control, a Gazebo control plugin is utilized to publish values to the left and rigth wheel transform, while user input from the keyboard is translated into velocity commands published to the `cmd_vel` topic.<br />
+
 ![Untitleddesign-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/69c11f11-90a7-495d-87ac-c2dad680c52e)
 
 # Sensor Integration
@@ -61,3 +67,6 @@ Create a differential drive robot model using multiple configuration files in th
 # Navigation using Joystick
  Teleoperation is a method of operating a system remotely, often involving the transmission of command signals and the reception of feedback from the system. In this project, teleoperation specifically involves the control of velocity using a joystick interface. The joystick driver publishes messages to the `sensor_msgs/joy` topic. To facilitate this process, a launch file named  `joystick.launch.py` and parameters file `joystick.yaml` are created specifically for configuring the joystick interface. <br />
 **Note:** Navigation using Joystick is an optional feature, and if using a keyboard instead, this functionality can be skipped. 
+
+# Mapping using SLAM
+ Simultaneous localization and mapping (SLAM) is the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it. In this project grid SLAM with 2D LiDAR is used Online Asnychronous mode.
