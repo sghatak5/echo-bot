@@ -56,4 +56,8 @@ Create a differential drive robot model using multiple configuration files in th
  ![Untitleddesign3-ezgif com-video-to-gif-converter](https://github.com/sghatak5/echo-bot/assets/149153121/0de99781-9662-4436-a8eb-240d50dd30c6)
 
 # Control using ROS2 Control
- ROS2 Control is a framework for (real-time) control of robots using ROS2. Its goal is to simplify integrating new hardware and overcome some drawbacks. To add ROS2 Control in Gazebo sim `ros2_control.xacro` is used. Gazebo uses its own controller manager which uses the `my_controller.yaml`. To use the controller a `spawner.py` file is used in the launch file. 
+ ROS2 Control is a framework designed for real-time control of robots utilizing the Robot Operating System 2 (ROS2). Its primary objective is to streamline the integration of new hardware and address certain limitations present in previous versions. In the context of simulation environments like Gazebo, the integration of ROS2 Control is facilitated through the utilization of the `ros2_control.xacro file`. However, it's noteworthy that Gazebo incorporates its own controller manager, which operates using the `my_controller.yaml` configuration file. To deploy and utilize controllers within Gazebo, a `spawner.py` script is employed within the launch file.
+
+# Navigation using Joystick
+ Teleoperation is a method of operating a system remotely, often involving the transmission of command signals and the reception of feedback from the system. In this project, teleoperation specifically involves the control of velocity using a joystick interface. The joystick driver publishes messages to the `sensor_msgs/joy` topic. To facilitate this process, a launch file named  `joystick.launch.py` and parameters file `joystick.yaml` are created specifically for configuring the joystick interface. 
+**Note:**Navigation using Joystick is an optional feature, and if using a keyboard instead, this functionality can be skipped. 
