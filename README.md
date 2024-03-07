@@ -34,7 +34,7 @@ $ sudo apt install ros-<distro-name>-ros2-control ros-<distro-name>-ros2-control
 ```sh
 $ sudo apt install ros-<distro-name>-slam-toolbox
 ```
--Install NAV2 
+- Install NAV2 
 ```sh
 $ sudo apt install ros-<distro-name>-navigation2 sudo apt install ros-<distro-name>-nav2-bringup sudo apt install ros-<distro-name>-twist-mux
 ```
